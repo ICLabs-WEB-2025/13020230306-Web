@@ -37,7 +37,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="#" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
+     
        <img src="assets/img/Paw.jpg" alt="">
         <h1 class="sitename">Penitipan Hewan</h1>
       </a>
