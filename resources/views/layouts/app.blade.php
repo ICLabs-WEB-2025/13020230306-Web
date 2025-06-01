@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>{{ $title ?? config('app.name', 'Laravel') }} - Active Bootstrap Template</title>
+    <title>{{ $title ?? config('app.name', 'PenitipanHewan') }}</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -11,8 +11,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/paw.jpg') }}" rel="icon">
+    <link href="{{ asset('assets/img/paw.jpg') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -37,8 +37,8 @@
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
             <a href="{{ route('landingPage.index') }}" class="logo d-flex align-items-center">
-               <img src="{{ asset('assets/img/logo.png') }}" alt="">
-                <h1 class="sitename">Active.</h1>
+               <img src="{{ asset('assets/img/paw.jpg') }}" alt="">
+                <h1 class="sitename">Penitipan Hewan</h1>
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
