@@ -1,21 +1,22 @@
-<div class="sidebar" data-background-color="dark">
+<div class="sidebar" data-background-color="black" >
     <div class="sidebar-logo">
         <!-- Logo Sidebar -->
         <a href="{{ route('customer.dashboard') }}" class="logo">
-            {{-- <img src="{{ asset('kaiadmin/assets/img/kaiadmin/logo_light.svg') }}" alt="navbar brand" class="navbar-brand" height="20"/> --}}
-             <span class="text-light ms-2 fw-bold">{{ config('app.name', 'Pet Care') }}</span>
+      
+             {{-- <span class="text-light ms-2 fw-bold">{{ config('app.name', 'Pet Care') }}</span> --}}
         </a>
         <div class="sidebar-toggler sidenav-toggler">
             <span class="navbar-toggler-icon"></span>
         </div>
-        <button class="btn btn-minimize">
+        {{-- <button class="btn btn-minimize">
             <i class="gg-menu-left"></i>
-        </button>
+        </button> --}}
         <!-- End Logo Sidebar -->
     </div>
+    
     <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
-            <ul class="nav nav-secondary">
+            <ul class="nav nav-success">
                 <li class="nav-item {{ request()->routeIs('customer.dashboard') ? 'active' : '' }}">
                     <a href="{{ route('customer.dashboard') }}" class="collapsed" aria-expanded="false">
                         <i class="fas fa-home"></i>

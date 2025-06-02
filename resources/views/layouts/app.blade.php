@@ -29,8 +29,7 @@
     <!-- Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
-    <!-- Scripts (jika menggunakan Vite) -->
-    {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+
 </head>
 <body class="{{ $bodyClass ?? 'index-page' }}">
 
@@ -86,84 +85,8 @@
         @yield('content')
     </main>
 
-    <footer id="footer" class="footer light-background">
-        <!-- Salin konten footer Anda dari index.html ke sini -->
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
-              <div class="widget">
-                <h3 class="widget-heading">Tentang Kami</h3>
-                <p class="mb-4">
-                  There live the blind texts. Separated they live in Bookmarksgrove
-                  right at the coast of the Semantics, a large language ocean.
-                </p>
-                <p class="mb-0">
-                  <a href="#" class="btn-learn-more">Selengkapnya</a>
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 ps-lg-5 mb-3 mb-md-0">
-              <div class="widget">
-                <h3 class="widget-heading">Navigasi</h3>
-                <ul class="list-unstyled float-start me-5">
-                  <li><a href="#">Gambaran Umum</a></li>
-                  <li><a href="#">Tentang Kami</a></li>
-                  <li><a href="#">Cari Pembeli</a></li>
-                </ul>
-                <ul class="list-unstyled float-start">
-                  <li><a href="#">Gambaran Umum</a></li>
-                  <li><a href="#">Tentang Kami</a></li>
-                  <li><a href="#">Layanan</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 pl-lg-5">
-              <div class="widget">
-                <h3 class="widget-heading">Postingan Terbaru</h3>
-                <ul class="list-unstyled footer-blog-entry">
-                  <li>
-                    <span class="d-block date">Mei 3, 2020</span>
-                    <a href="#">There live the Blind Texts</a>
-                  </li>
-                  <li>
-                    <span class="d-block date">Mei 3, 2020</span>
-                    <a href="#">Separated they live in Bookmarksgrove right</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 pl-lg-5">
-              <div class="widget">
-                <h3 class="widget-heading">Terhubung</h3>
-                <ul class="list-unstyled social-icons light mb-3">
-                  <li>
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="bi bi-google"></span></a>
-                  </li>
-                  <li>
-                    <a href="#"><span class="bi bi-google-play"></span></a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Hapus bagian subscribe jika tidak menggunakan PHP form bawaan template -->
-            </div>
-          </div>
-          <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
-            <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">Active.</strong> <span>Dilindungi Undang-Undang</span></p>
-            <div class="credits">
-              Dirancang oleh <a href="https://bootstrapmade.com/">BootstrapMade</a> Didistribusikan Oleh <a href="https://themewagon.com">ThemeWagon</a>
-            </div>
-          </div>
-        </div>
-    </footer>
+   
+      
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <div id="preloader"></div>

@@ -2,9 +2,9 @@
 <html lang="id">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>{{ $title ?? 'Dasbor Pelanggan' }} - {{ config('app.name', 'Pet Care') }}</title>
+    <title>Penitipan Hewan</title>
     <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
-    <link rel="icon" href="{{ asset('kaiadmin/assets/img/kaiadmin/favicon.ico') }}" type="image/x-icon" /> <!-- Sesuaikan path favicon -->
+    <link rel="icon" href="{{ asset('kaiadmin/assets/img/Paw.jpg') }}" type="image/x-icon" /> <!-- Sesuaikan path favicon -->
 
     <!-- Fonts and icons -->
     <script src="{{ asset('kaiadmin/assets/js/plugin/webfont/webfont.min.js') }}"></script>
@@ -23,10 +23,15 @@
     <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/plugins.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/kaiadmin.min.css') }}" />
 
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    {{-- <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/demo.css') }}" /> --}}
-    @stack('styles') {{-- Untuk CSS spesifik halaman --}}
+ 
+    @stack('styles') 
 </head>
+
+
+
+
+
+
 <body>
     <div class="wrapper">
         <!-- Sidebar -->
@@ -61,6 +66,9 @@
                 <!-- End Navbar -->
             </div>
 
+
+
+            
             <div class="container">
                 <div class="page-inner">
                     @if (session('success'))
@@ -94,23 +102,21 @@
             @include('customer.partials._footer')
         </div>
     </div>
-    <!--   Core JS Files   -->
+   
     <script src="{{ asset('kaiadmin/assets/js/core/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('kaiadmin/assets/js/core/popper.min.js') }}"></script>
     <script src="{{ asset('kaiadmin/assets/js/core/bootstrap.min.js') }}"></script>
 
-    <!-- jQuery Scrollbar -->
+ 
     <script src="{{ asset('kaiadmin/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
 
-    <!-- jQuery Sparkline -->
+
     <script src="{{ asset('kaiadmin/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
 
-    <!-- Kaiadmin JS -->
+   
     <script src="{{ asset('kaiadmin/assets/js/kaiadmin.min.js') }}"></script>
 
-    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-    {{-- <script src="{{ asset('kaiadmin/assets/js/setting-demo.js') }}"></script> --}}
-    {{-- <script src="{{ asset('kaiadmin/assets/js/demo.js') }}"></script> --}}
+  
     @stack('scripts') {{-- Untuk JS spesifik halaman --}}
 </body>
 </html>

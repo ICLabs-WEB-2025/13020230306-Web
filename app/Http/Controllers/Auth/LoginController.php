@@ -44,6 +44,6 @@ class LoginController extends Controller
         }
 
         // Pengalihan default jika peran tidak cocok atau dasbor spesifik tidak diatur
-        return redirect('/home'); // Atau ke halaman yang lebih sesuai
+        return redirect('/index'); // Atau ke halaman yang lebih sesuai
     }
 }

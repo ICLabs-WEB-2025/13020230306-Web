@@ -48,9 +48,9 @@ class AdminPetBoardingController extends Controller
      */
     public function show(PetBoarding $petBoarding)
     {
-        // Pastikan data ada dan bisa diakses (meskipun admin biasanya punya akses luas)
+        
         $petBoarding->load('user'); // Eager load user
-        $statuses = [ // Untuk dropdown ubah status
+        $statuses = [ 
             PetBoarding::STATUS_PENDING,
             PetBoarding::STATUS_VERIFIED,
             PetBoarding::STATUS_REJECTED,
@@ -73,7 +73,7 @@ class AdminPetBoardingController extends Controller
                 PetBoarding::STATUS_COMPLETED,
                 PetBoarding::STATUS_CANCELLED,
             ])],
-            'admin_notes' => 'nullable|string', // Catatan dari admin
+            'admin_notes' => 'nullable|string', 
         ]);
 
         $petBoarding->update([
@@ -81,9 +81,7 @@ class AdminPetBoardingController extends Controller
             'admin_notes' => $request->admin_notes,
         ]);
 
-        // Opsional: Kirim notifikasi email ke customer tentang perubahan status
-        // Mail::to($petBoarding->user->email)->send(new PetBoardingStatusUpdated($petBoarding));
-
+  
         return redirect()->route('admin.pet-boardings.show', $petBoarding->id)->with('success', 'Status penitipan berhasil diperbarui.');
     }
 }

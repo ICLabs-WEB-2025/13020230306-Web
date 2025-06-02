@@ -2,9 +2,9 @@
 <html lang="id">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>{{ $title ?? 'Dasbor Admin' }} - {{ config('app.name', 'Pet Care') }}</title>
+    <title>Penitipan Hewan</title>
     <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
-    <link rel="icon" href="{{ asset('kaiadmin/assets/img/kaiadmin/favicon.ico') }}" type="image/x-icon" /> <!-- Sesuaikan path favicon -->
+    <link rel="icon" href="{{ asset('kaiadmin/assets/img/Paw.jpg') }}" type="image/x-icon" /> <!-- Sesuaikan path favicon -->
 
     <!-- Fonts and icons -->
     <script src="{{ asset('kaiadmin/assets/js/plugin/webfont/webfont.min.js') }}"></script>
