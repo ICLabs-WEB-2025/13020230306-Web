@@ -15,11 +15,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Rute Dasbor Admin
-// Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
-//     Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
-//     // Tambahkan rute admin lainnya di sini
-// });
+
 
 // Rute Dasbor Pelanggan
 Route::middleware(['auth', 'role:customer'])->prefix('customer')->name('customer.')->group(function () {

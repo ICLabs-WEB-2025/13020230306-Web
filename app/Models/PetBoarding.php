@@ -23,23 +23,18 @@ class PetBoarding extends Model
         'admin_notes',
     ];
 
-    /**
-     * Relasi ke model User (pemilik).
-     */
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
-
- 
     public const STATUS_PENDING = 'pending';
     public const STATUS_VERIFIED = 'verified';
     public const STATUS_REJECTED = 'rejected';
     public const STATUS_COMPLETED = 'completed';
     public const STATUS_CANCELLED = 'cancelled';
 
- 
-    public function canBeModified()
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function canBeModified(): bool
     {
         return $this->status === self::STATUS_PENDING;
     }

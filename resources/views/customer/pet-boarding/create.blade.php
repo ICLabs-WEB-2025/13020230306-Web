@@ -12,7 +12,7 @@
     </ul>
 </div>
 <div class="row">
-    <div class="col-md-10 mx-auto"> {{-- Dibuat lebih sempit agar form tidak terlalu lebar --}}
+    <div class="col-md-10 mx-auto"> 
         <div class="card">
             <div class="card-header">
                 <h4 class="card-title">Isi Data Penitipan</h4>

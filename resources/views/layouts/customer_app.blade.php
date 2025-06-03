@@ -4,9 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Penitipan Hewan</title>
     <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
-    <link rel="icon" href="{{ asset('kaiadmin/assets/img/Paw.jpg') }}" type="image/x-icon" /> <!-- Sesuaikan path favicon -->
+    <link rel="icon" href="{{ asset('kaiadmin/assets/img/Paw.jpg') }}" type="image/x-icon" />
 
-    <!-- Fonts and icons -->
     <script src="{{ asset('kaiadmin/assets/js/plugin/webfont/webfont.min.js') }}"></script>
     <script>
         WebFont.load({
@@ -18,34 +17,23 @@
         });
     </script>
 
-    <!-- CSS Files -->
     <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/plugins.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/kaiadmin.min.css') }}" />
 
- 
     @stack('styles') 
 </head>
 
-
-
-
-
-
 <body>
     <div class="wrapper">
-        <!-- Sidebar -->
         @include('customer.partials._sidebar')
-        <!-- End Sidebar -->
 
         <div class="main-panel">
             <div class="main-header">
                 <div class="main-header-logo">
-                    <!-- Logo Header -->
-                    <div class="logo-header" data-background-color="dark">
+                    <div class="logo-header" data-background-color="white">
                         <a href="{{ route('customer.dashboard') }}" class="logo">
-                            {{-- <img src="{{ asset('kaiadmin/assets/img/kaiadmin/logo_light.svg') }}" alt="navbar brand" class="navbar-brand" height="20" /> --}}
-                            <span class="text-light ms-2 fw-bold">{{ config('app.name', 'Pet Care') }}</span>
+                            <span class="text-dark ms-2 fw-bold">Penitipan Hewan</span>
                         </a>
                         <div class="nav-toggle">
                             <button class="btn btn-toggle toggle-sidebar">
@@ -59,16 +47,10 @@
                             <i class="gg-more-vertical-alt"></i>
                         </button>
                     </div>
-                    <!-- End Logo Header -->
                 </div>
-                <!-- Navbar Header -->
                 @include('customer.partials._header_nav')
-                <!-- End Navbar -->
             </div>
 
-
-
-            
             <div class="container">
                 <div class="page-inner">
                     @if (session('success'))
@@ -102,21 +84,13 @@
             @include('customer.partials._footer')
         </div>
     </div>
-   
+    
     <script src="{{ asset('kaiadmin/assets/js/core/jquery-3.7.1.min.js') }}"></script>
     <script src="{{ asset('kaiadmin/assets/js/core/popper.min.js') }}"></script>
     <script src="{{ asset('kaiadmin/assets/js/core/bootstrap.min.js') }}"></script>
-
- 
     <script src="{{ asset('kaiadmin/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
-
-
     <script src="{{ asset('kaiadmin/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js') }}"></script>
-
-   
     <script src="{{ asset('kaiadmin/assets/js/kaiadmin.min.js') }}"></script>
-
-  
-    @stack('scripts') {{-- Untuk JS spesifik halaman --}}
+    @stack('scripts')
 </body>
 </html>

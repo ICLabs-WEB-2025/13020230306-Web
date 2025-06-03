@@ -16,10 +16,7 @@
             <div class="card-header">
                 <div class="d-flex align-items-center">
                     <h4 class="card-title">Daftar Semua Pengajuan Penitipan</h4>
-                    {{-- Tombol tambah baru oleh admin mungkin tidak diperlukan jika hanya customer yang mengajukan --}}
-                    {{-- <a href="#" class="btn btn-primary btn-round ms-auto">
-                        <i class="fa fa-plus"></i> Tambah Penitipan (Admin)
-                    </a> --}}
+       
                 </div>
                 {{-- Form Filter Opsional --}}
                 <form method="GET" action="{{ route('admin.pet-boardings.index') }}" class="mt-3">

@@ -224,7 +224,7 @@
 
         <div class="footer">
             <p>Terima kasih telah mempercayakan penitipan hewan Anda kepada kami.</p>
-            <p><strong>{{ config('app.name', 'Pet Care Anda') }}</strong></p>
+            <p><strong>Penitipan Hewan</strong></p>
             {{-- Anda bisa menambahkan alamat atau kontak di sini --}}
             <p>Dokumen ini dicetak pada: {{ now()->isoFormat('D MMMM YYYY, HH:mm:ss') }}</p>
         </div>
